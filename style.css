@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    width: 100%; 
+    background-color: #edffeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second{
+    height: 58%;
+    width: 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1500px;
+    animation-name: parent;
+    animation-iteration-count: infinite;
+    border:5px solid red;
+    
+    
+}
+.banner-content-area{
+    padding: 25px;
+
+}
+.banner-content-area h3{
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color:#666;
+}
+.banner-content-area{
+    font-size: 10px;
+    font-weight: 400;
+    color:#666;
+}
+.secondcont{
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    transition: all 1s ease-in;
+    transform: rotateX(45deg);
+    animation-name: mandy;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes mandy {
+     0%{
+        transform: rotateX(45deg);
+     }
+     25%{
+        transform: rotateX(15deg);
+     }
+     75%{
+        transform: rotateX(15deg);
+     }
+     100%{
+        transform: rotateX(45deg);
+     }
+}
+.secondcont:nth-child(1){
+    bottom: 5%;
+    left: 10%;
+    background:url(business-training.jpg) center no-repeat;
+    background-size: cover;
+    border:2px solid #888;
+    border-radius: 80px;
+    /* animation-name: one;
+    animation-duration: 6s;
+    animation-iteration-count: infinite ;
+    animation-delay: 8s;
+    */
+}
+.secondcont:nth-child(2){
+    bottom: 15%;
+    left: 10%;
+    background:url(banner-one-img.jpg) center no-repeat;
+    background-size: cover;
+    border:2px solid #888;
+    border-radius: 80px;
+     /* animation-name: two;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+     animation-delay: 4s; 8*/
+} 
+.secondcont:nth-child(3){
+    bottom: 25%;
+    left: 10%;
+    background:url(Untitled-1.jpg) center no-repeat;
+    background-size: cover;
+    border:2px solid #888;
+    border-radius: 80px;
+    /* animation-name: three;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s; */
+} 
+@keyframes parent {
+    0%{
+    transform: rotateX(45deg);
+    }   
+    10%{
+        transform: rotateX(25deg);
+    }
+    90%{
+        transform: rotateX(25deg);
+    }
+    100%{
+        transform: rotateX(45deg);
+
+    }
+}
+      @keyframes three{
+        0%{   
+            opacity: 1;
+            top:-15%;
+            transform-origin: top center;   
+            transform: rotateX(45deg);
+        }   
+        50%{
+            opacity: 0;   
+            top:-20%  ;
+            transform-origin: top center;  
+            transform: rotateX(0deg);
+            opacity: 5;
+            
+        }
+        100%{
+            top:-30%;
+            transform-origin: top center;  
+            transform: rotateX(-45deg);
+            opacity: 0;
+
+        } 
+    }
+    @keyframes two{
+        0%{   
+            opacity: 1;
+            top:-20%;
+            transform-origin: top center;   
+            transform: rotateX(45deg);
+        }   
+        50%{
+            opacity: 0;   
+            top:-20%  ;
+            transform-origin: top center;  
+            transform: rotateX(0deg);
+            opacity: 5;
+            
+        }
+        100%{
+            top:-20%;
+            transform-origin: top center;  
+            transform: rotateX(-45deg);
+            opacity: 0;
+
+        } 
+    }
+    @keyframes one{
+        0%{   
+            opacity: 1;
+            top:-20%;
+            transform-origin: top center;   
+            transform: rotateX(45deg);
+        }   
+        50%{
+            opacity: 0;   
+            top:-20%  ;
+            transform-origin: top center;  
+            transform: rotateX(0deg);
+            opacity: 5;
+            
+        }
+        100%{
+            top:-20%;
+            transform-origin: top center;  
+            transform: rotateX(-45deg);
+            opacity: 0;
+
+        } 
+    }
+   
